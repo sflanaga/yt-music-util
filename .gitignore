@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+downloads/
+*.mp3
+*.aac
+*.m4a
+*.opus
+*.webm

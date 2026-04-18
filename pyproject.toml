@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yt-music"
+version = "0.1.0"
+description = "Download YouTube Music playlists and convert to mp3/aac"
+requires-python = ">=3.10"
+dependencies = [
+    "yt-dlp>=2024.0",
+    "click>=8.0",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+]
+
+[project.scripts]
+yt-music = "yt_music.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
